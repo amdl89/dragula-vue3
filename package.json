@@ -1,0 +1,35 @@
+{
+  "name": "dragula-vue",
+  "version": "0.0.1",
+  "description": "vue 3 component wrapper for dragula js library",
+  "author": {
+    "name": "amdl89"
+  },
+  "private": false,
+  "repository": "https://github.com/amdl89/v-show-case",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vue",
+    "dragula"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dragula": "^3.7.3",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "vite": "^4.4.9"
+  }
+}
