@@ -1,6 +1,6 @@
 {
   "name": "dragula-vue",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "vue 3 component wrapper for dragula js library",
   "author": {
     "name": "amdl89"
