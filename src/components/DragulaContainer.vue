@@ -83,7 +83,40 @@ export default {
                 [sourceListKey]: newSourceList,
                 [targetListKey]: newTargetList,
             });
+
+            this.$emit("drop", {
+                sourceKey: sourceListKey,
+                targetKey: targetListKey,
+                listItem: sourceData,
+            });
         },
+        syncListsOnRemove(el, container, source) {
+            const lists = this.modelValue;
+            const itemKeyFunc = this.itemKeyFunc;
+
+            const sourceListKey = source.dataset.dragulaId;
+            const sourceList = lists[sourceListKey];
+
+            const sourceDataId = el.dataset.dragulaId;
+            const sourceData = sourceList.find(
+                (item) => itemKeyFunc(item) === sourceDataId
+            );
+
+            const newSourceList = sourceList.filter(
+                (item) => !(item === sourceData)
+            );
+
+            this.$emit("update:modelValue", {
+                ...lists,
+                [sourceListKey]: newSourceList,
+            });
+
+            this.$emit("remove", {
+                sourceKey: sourceListKey,
+                listItem: sourceData,
+            });
+        },
+
         setDrakeContainers() {
             if (!this.$drake) {
                 return;
@@ -99,6 +132,7 @@ export default {
         });
         this.setDrakeContainers();
         this.$drake.on("drop", this.syncListsOnDrop);
+        this.$drake.on("remove", this.syncListsOnRemove);
     },
     updated() {
         this.setDrakeContainers();
