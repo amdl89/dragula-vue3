@@ -107,7 +107,7 @@ export default {
 
 #### `DragulaContainer`
 
-It is the wrapper component representing the container in which the dragula lists reside. It accepts an object representing all the lists inside the container and keeps it in sync using `v-model` prop. It exposes the default scoped slot with `listKeys`, which is an array of the keys of the object passed to v-model, which can be used to loop over and construct a `DragulaList` for every list in the passed object [_(as shown in the usage example. )_](https://github.com/amdl89/dragula-vue3#usage).
+It is the wrapper component representing the container in which the dragula lists reside. It accepts an object representing all the lists inside the container and keeps it in sync using `v-model` prop. It exposes the default scoped slot with `listKeys`, which is an array of the keys of the object passed to v-model, which can be used to loop over and construct a `DragulaList` for every list in the passed object [_(as shown in the usage example)_](https://github.com/amdl89/dragula-vue3#usage).
 
 ###### `Props`
 
@@ -120,7 +120,7 @@ It is the wrapper component representing the container in which the dragula list
 
 #### `DragulaList`
 
-It represents an inidvidual list in a container. It accepts a `listKey` prop, which corresponds to a list for that key in the object passed to `DragulaContainer`, and exposes the default scoped slot with `listItems`, which is the list for that key, and is used to construct a `DragulaListItem` for items in that list [_(as shown in the usage example. )_](https://github.com/amdl89/dragula-vue3#usage).
+It represents an inidvidual list in a container. It accepts a `listKey` prop, which corresponds to a list for that key in the object passed to `DragulaContainer`, and exposes the default scoped slot with `listItems`, which is the list for that key, and is used to construct a `DragulaListItem` for items in that list [_(as shown in the usage example)_](https://github.com/amdl89/dragula-vue3#usage).
 
 ###### `Props`
 
@@ -131,7 +131,7 @@ It represents an inidvidual list in a container. It accepts a `listKey` prop, wh
 
 #### `DragulaListItem`
 
-It represents an individual item in a list inside a container. It accepts a 'listItem' prop, and just exposes it in the default scoped slot[_(as shown in the usage example. )_](https://github.com/amdl89/dragula-vue3#usage).
+It represents an individual item in a list inside a container. It accepts a 'listItem' prop, and just exposes it in the default scoped slot[_(as shown in the usage example)_](https://github.com/amdl89/dragula-vue3#usage).
 
 |   Name   |         Type         | Desctiption                                              |
 | :------: | :------------------: | -------------------------------------------------------- |
