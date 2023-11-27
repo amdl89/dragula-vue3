@@ -103,7 +103,7 @@ export default {
 </style>
 ```
 
-### Components
+## Components
 
 #### `DragulaContainer`
 
@@ -147,7 +147,7 @@ The `DragulaContainer` component emits the following events:
 |  drop  | Object: `{ sourceKey, targetKey, listItem }` | Fired after syncing v-model when an element is dragged from one list and dropped to another list or is reordered within the same list. |
 | remove |      Object: `{ sourceKey, listItem }`       | Fired after syncing v-model when an element is removed from the dragula container.                                                     |
 
-### `Dragula instance`
+## Dragula instance
 
 The underlying dragula instance can be accessed from `DragulaContainer` component using its `$drake` property. It will be null before the `DragulaContainer` component mounts and dragula is initialized.
 
