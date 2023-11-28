@@ -1,4 +1,4 @@
-# dragula-vue
+# dragula-vue3
 
 Vue 3 components for working with the [`dragula`](https://github.com/bevacqua/dragula) library.
 
@@ -7,8 +7,8 @@ Vue 3 components for working with the [`dragula`](https://github.com/bevacqua/dr
 ## Install
 
 ```bash
-npm install --save dragula-vue
-``` 
+npm install --save dragula-vue3
+```
 
 ## Setup
 
