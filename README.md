@@ -1,16 +1,16 @@
-# dragula-vue3
+# dragula-vue
 
 Vue 3 components for working with the [`dragula`](https://github.com/bevacqua/dragula) library.
 
 ---
 
-<!-- ## Install
+## Install
 
 The library is available on [npm](https://www.npmjs.com/) as [`dragula-vue`](https://www.npmjs.com/package/dragula-vue).
 
 ```bash
 npm install --save dragula-vue
-``` -->
+``` 
 
 ## Setup
 
