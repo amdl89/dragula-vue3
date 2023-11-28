@@ -8,7 +8,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, "src/index.js"),
-            name: "show-case",
+            name: "dragulaVue",
             fileName: (format) => (format === "es" ? "index.js" : "index.c.js"),
         },
         rollupOptions: {
