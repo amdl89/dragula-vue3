@@ -6,8 +6,6 @@ Vue 3 components for working with the [`dragula`](https://github.com/bevacqua/dr
 
 ## Install
 
-The library is available on [npm](https://www.npmjs.com/) as [`dragula-vue`](https://www.npmjs.com/package/dragula-vue).
-
 ```bash
 npm install --save dragula-vue
 ``` 
