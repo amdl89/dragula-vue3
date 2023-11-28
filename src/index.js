@@ -1,3 +1,4 @@
+import "dragula/dist/dragula.min.css";
 import DragulaContainer from "./components/DragulaContainer.vue";
 import DragulaList from "./components/DragulaList.vue";
 import DragulaListItem from "./components/DragulaListItem.vue";
